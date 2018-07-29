@@ -16,3 +16,13 @@ enum Form: Int {
     case inhaler
     case topical
 }
+
+enum Day: Int {
+    case sunday = 1
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+    case saturday
+}
