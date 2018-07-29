@@ -15,6 +15,7 @@
 		63F7BB16210C48EA00D49CE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F7BB14210C48EA00D49CE0 /* LaunchScreen.storyboard */; };
 		63F7BB21210C48EA00D49CE0 /* pillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7BB20210C48EA00D49CE0 /* pillsTests.swift */; };
 		63F7BB2C210C48EA00D49CE0 /* pillsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7BB2B210C48EA00D49CE0 /* pillsUITests.swift */; };
+		63F7BB3A210D827A00D49CE0 /* MedicationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7BB39210D827A00D49CE0 /* MedicationForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		63F7BB27210C48EA00D49CE0 /* pillsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pillsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F7BB2B210C48EA00D49CE0 /* pillsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pillsUITests.swift; sourceTree = "<group>"; };
 		63F7BB2D210C48EA00D49CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F7BB39210D827A00D49CE0 /* MedicationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MedicationForm.swift; path = Enums/MedicationForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				63F7BB14210C48EA00D49CE0 /* LaunchScreen.storyboard */,
 				63F7BB17210C48EA00D49CE0 /* Info.plist */,
 				63F7BB0F210C48E900D49CE0 /* pills.xcdatamodeld */,
+				63F7BB39210D827A00D49CE0 /* MedicationForm.swift */,
 			);
 			path = pills;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F7BB3A210D827A00D49CE0 /* MedicationForm.swift in Sources */,
 				63F7BB0B210C48E900D49CE0 /* ViewController.swift in Sources */,
 				63F7BB11210C48E900D49CE0 /* pills.xcdatamodeld in Sources */,
 				63F7BB09210C48E900D49CE0 /* AppDelegate.swift in Sources */,

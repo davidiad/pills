@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DailyDoses" representedClassName="DailyDoses" syncable="YES" codeGenerationType="class">
+        <relationship name="pillboxes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pillbox" inverseName="days" inverseEntity="Pillbox" syncable="YES"/>
+    </entity>
+    <entity name="Med" representedClassName="Med" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="attribute" optional="YES" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="form" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="shape" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="medication" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medication" inverseName="med" inverseEntity="Medication" syncable="YES"/>
+        <relationship name="pillbox" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pillbox" inverseName="meds" inverseEntity="Pillbox" syncable="YES"/>
+    </entity>
+    <entity name="Medication" representedClassName="Medication" syncable="YES" codeGenerationType="class">
+        <attribute name="brandName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genericName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="med" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Med" inverseName="medication" inverseEntity="Med" syncable="YES"/>
+    </entity>
+    <entity name="Pillbox" representedClassName="Pillbox" syncable="YES" codeGenerationType="class">
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="timeOfDay" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="days" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailyDoses" inverseName="pillboxes" inverseEntity="DailyDoses" syncable="YES"/>
+        <relationship name="meds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Med" inverseName="pillbox" inverseEntity="Med" syncable="YES"/>
+    </entity>
+    <entity name="Prescription" representedClassName="Prescription" syncable="YES" codeGenerationType="class">
+        <attribute name="dosage" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Medication" positionX="-234" positionY="-256" width="128" height="103"/>
+        <element name="Med" positionX="-441" positionY="-423" width="128" height="163"/>
+        <element name="Prescription" positionX="-216" positionY="81" width="128" height="58"/>
+        <element name="Pillbox" positionX="-486" positionY="-126" width="128" height="103"/>
+        <element name="DailyDoses" positionX="-621" positionY="-225" width="128" height="58"/>
+    </elements>
 </model>
