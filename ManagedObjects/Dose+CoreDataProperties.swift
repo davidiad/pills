@@ -2,7 +2,7 @@
 //  Dose+CoreDataProperties.swift
 //  pills
 //
-//  Created by David Fierstein on 7/28/18.
+//  Created by David Fierstein on 7/29/18.
 //  Copyright © 2018 David Fierstein. All rights reserved.
 //
 //
@@ -17,8 +17,8 @@ extension Dose {
         return NSFetchRequest<Dose>(entityName: "Dose")
     }
 
-    @NSManaged public var dosage: Float
     @NSManaged public var color: Int16
+    @NSManaged public var dosage: Float
     @NSManaged public var form: Int16
     @NSManaged public var shape: Int16
     @NSManaged public var size: Float
