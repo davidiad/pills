@@ -2,7 +2,7 @@
 //  Pillbox+CoreDataProperties.swift
 //  pills
 //
-//  Created by David Fierstein on 7/29/18.
+//  Created by David Fierstein on 7/30/18.
 //  Copyright © 2018 David Fierstein. All rights reserved.
 //
 //
@@ -18,8 +18,8 @@ extension Pillbox {
     }
 
     @NSManaged public var time: NSDate?
-    @NSManaged public var timeOfDay: String?
-    @NSManaged public var days: DailyDoseSchedule?
+    @NSManaged public var title: String?
+    @NSManaged public var days: DailySchedule?
     @NSManaged public var doses: NSSet?
 
 }

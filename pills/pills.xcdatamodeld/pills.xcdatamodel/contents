@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="DailyDoseSchedule" representedClassName="DailyDoseSchedule" syncable="YES">
+    <entity name="DailySchedule" representedClassName="DailySchedule" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="day" optional="YES" attributeType="Integer 16" minValueString="1" maxValueString="7" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="pillboxes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pillbox" inverseName="days" inverseEntity="Pillbox" syncable="YES"/>
+        <relationship name="schedule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Schedule" inverseName="days" inverseEntity="Schedule" syncable="YES"/>
     </entity>
     <entity name="Dose" representedClassName="Dose" syncable="YES">
         <attribute name="color" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -10,6 +12,7 @@
         <attribute name="form" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="shape" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="size" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="taken" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="medication" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medication" inverseName="dose" inverseEntity="Medication" syncable="YES"/>
         <relationship name="pillbox" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pillbox" inverseName="doses" inverseEntity="Pillbox" syncable="YES"/>
     </entity>
@@ -22,19 +25,24 @@
     </entity>
     <entity name="Pillbox" representedClassName="Pillbox" syncable="YES">
         <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="timeOfDay" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="days" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailyDoseSchedule" inverseName="pillboxes" inverseEntity="DailyDoseSchedule" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="days" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DailySchedule" inverseName="pillboxes" inverseEntity="DailySchedule" syncable="YES"/>
         <relationship name="doses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Dose" inverseName="pillbox" inverseEntity="Dose" syncable="YES"/>
     </entity>
     <entity name="Prescription" representedClassName="Prescription" syncable="YES">
         <attribute name="dosage" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="medication" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Medication" inverseName="prescription" inverseEntity="Medication" syncable="YES"/>
     </entity>
+    <entity name="Schedule" representedClassName="Schedule" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="days" optional="YES" toMany="YES" minCount="1" maxCount="7" deletionRule="Nullify" ordered="YES" destinationEntity="DailySchedule" inverseName="schedule" inverseEntity="DailySchedule" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="DailyDoseSchedule" positionX="4770" positionY="8765" width="128" height="73"/>
-        <element name="Dose" positionX="4797" positionY="9095" width="128" height="148"/>
-        <element name="Medication" positionX="4977" positionY="9243" width="128" height="118"/>
-        <element name="Pillbox" positionX="4761" positionY="8915" width="128" height="103"/>
-        <element name="Prescription" positionX="5175" positionY="9233" width="128" height="73"/>
+        <element name="DailySchedule" positionX="3798" positionY="8757" width="128" height="103"/>
+        <element name="Dose" positionX="3816" positionY="9081" width="128" height="163"/>
+        <element name="Medication" positionX="4021" positionY="9026" width="128" height="118"/>
+        <element name="Pillbox" positionX="3807" positionY="8915" width="128" height="103"/>
+        <element name="Prescription" positionX="4203" positionY="8883" width="128" height="73"/>
+        <element name="Schedule" positionX="3796" positionY="8604" width="128" height="73"/>
     </elements>
 </model>

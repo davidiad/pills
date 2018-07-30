@@ -2,7 +2,7 @@
 //  Dose+CoreDataProperties.swift
 //  pills
 //
-//  Created by David Fierstein on 7/29/18.
+//  Created by David Fierstein on 7/30/18.
 //  Copyright © 2018 David Fierstein. All rights reserved.
 //
 //
@@ -22,6 +22,7 @@ extension Dose {
     @NSManaged public var form: Int16
     @NSManaged public var shape: Int16
     @NSManaged public var size: Float
+    @NSManaged public var taken: Bool
     @NSManaged public var medication: Medication?
     @NSManaged public var pillbox: Pillbox?
 

@@ -1,5 +1,5 @@
 //
-//  Medication+CoreDataClass.swift
+//  DailySchedule+CoreDataClass.swift
 //  pills
 //
 //  Created by David Fierstein on 7/30/18.
@@ -10,7 +10,7 @@
 import Foundation
 import CoreData
 
-@objc(Medication)
-public class Medication: NSManagedObject {
+@objc(DailySchedule)
+public class DailySchedule: NSManagedObject {
 
 }
