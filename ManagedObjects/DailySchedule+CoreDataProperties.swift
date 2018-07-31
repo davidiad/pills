@@ -2,7 +2,7 @@
 //  DailySchedule+CoreDataProperties.swift
 //  pills
 //
-//  Created by David Fierstein on 7/30/18.
+//  Created by David Fierstein on 7/31/18.
 //  Copyright © 2018 David Fierstein. All rights reserved.
 //
 //
@@ -17,8 +17,9 @@ extension DailySchedule {
         return NSFetchRequest<DailySchedule>(entityName: "DailySchedule")
     }
 
-    @NSManaged public var day: Int16
     @NSManaged public var date: NSDate?
+    @NSManaged public var day: Int16
+    @NSManaged public var current: Bool
     @NSManaged public var pillboxes: NSSet?
     @NSManaged public var schedule: Schedule?
 

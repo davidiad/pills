@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="DailySchedule" representedClassName="DailySchedule" syncable="YES">
+        <attribute name="current" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="day" optional="YES" attributeType="Integer 16" minValueString="1" maxValueString="7" defaultValueString="1" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="pillboxes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pillbox" inverseName="days" inverseEntity="Pillbox" syncable="YES"/>
@@ -38,11 +39,11 @@
         <relationship name="days" optional="YES" toMany="YES" minCount="1" maxCount="7" deletionRule="Nullify" ordered="YES" destinationEntity="DailySchedule" inverseName="schedule" inverseEntity="DailySchedule" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DailySchedule" positionX="3798" positionY="8757" width="128" height="103"/>
+        <element name="DailySchedule" positionX="3798" positionY="8757" width="128" height="118"/>
         <element name="Dose" positionX="3816" positionY="9081" width="128" height="163"/>
         <element name="Medication" positionX="4021" positionY="9026" width="128" height="118"/>
         <element name="Pillbox" positionX="3807" positionY="8915" width="128" height="103"/>
         <element name="Prescription" positionX="4203" positionY="8883" width="128" height="73"/>
-        <element name="Schedule" positionX="3796" positionY="8604" width="128" height="73"/>
+        <element name="Schedule" positionX="3589" positionY="8639" width="128" height="73"/>
     </elements>
 </model>

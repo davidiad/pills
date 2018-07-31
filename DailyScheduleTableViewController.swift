@@ -13,21 +13,21 @@ class DailyScheduleTableViewController: UITableViewController {
 
     // MARK: - NSFetchedResultsController vars
     lazy var sharedContext = {
-        CoreDataStackManager.sharedInstance().managedObjectContext
+        CoreDataStackManager.sharedInstance.managedObjectContext
     }()
     
     lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
         
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Word")
-        fetchRequest.predicate = NSPredicate(format: "inCurrentList == %@", true as CVarArg)
-        // Add Sort Descriptors
-        let sortDescriptor = NSSortDescriptor(key: "word", ascending: true)
-        fetchRequest.sortDescriptors = [sortDescriptor]
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "DailySchedule")
+        fetchRequest.predicate = NSPredicate(format: "current == %@", true as CVarArg)
+//        // Add Sort Descriptors
+//        let sortDescriptor = NSSortDescriptor(key: "word", ascending: true)
+//        fetchRequest.sortDescriptors = [sortDescriptor]
         
         let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.sharedContext, sectionNameKeyPath: nil, cacheName: nil)
-        
+        /* TK
         fetchedResultsController.delegate = tableViewsDelegate
-        
+        */
         return fetchedResultsController
     }()
     

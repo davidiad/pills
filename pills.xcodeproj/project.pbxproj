@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6315DC0B210FAD1100DABF1C /* DailySchedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DBFF210FAD1100DABF1C /* DailySchedule+CoreDataClass.swift */; };
-		6315DC0C210FAD1100DABF1C /* DailySchedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC00210FAD1100DABF1C /* DailySchedule+CoreDataProperties.swift */; };
-		6315DC0D210FAD1100DABF1C /* Schedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC01210FAD1100DABF1C /* Schedule+CoreDataClass.swift */; };
-		6315DC0E210FAD1100DABF1C /* Schedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC02210FAD1100DABF1C /* Schedule+CoreDataProperties.swift */; };
-		6315DC0F210FAD1100DABF1C /* Dose+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC03210FAD1100DABF1C /* Dose+CoreDataClass.swift */; };
-		6315DC10210FAD1100DABF1C /* Dose+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC04210FAD1100DABF1C /* Dose+CoreDataProperties.swift */; };
-		6315DC11210FAD1100DABF1C /* Pillbox+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC05210FAD1100DABF1C /* Pillbox+CoreDataClass.swift */; };
-		6315DC12210FAD1100DABF1C /* Pillbox+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC06210FAD1100DABF1C /* Pillbox+CoreDataProperties.swift */; };
-		6315DC13210FAD1100DABF1C /* Medication+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC07210FAD1100DABF1C /* Medication+CoreDataClass.swift */; };
-		6315DC14210FAD1100DABF1C /* Medication+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC08210FAD1100DABF1C /* Medication+CoreDataProperties.swift */; };
-		6315DC15210FAD1100DABF1C /* Prescription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC09210FAD1100DABF1C /* Prescription+CoreDataClass.swift */; };
-		6315DC16210FAD1100DABF1C /* Prescription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC0A210FAD1100DABF1C /* Prescription+CoreDataProperties.swift */; };
 		635D046021103FBC0000438D /* DailyScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D045F21103FBC0000438D /* DailyScheduleTableViewController.swift */; };
 		635D0462211040480000438D /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0461211040480000438D /* CoreDataStackManager.swift */; };
+		635D046F211047670000438D /* Dose+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0463211047670000438D /* Dose+CoreDataClass.swift */; };
+		635D0470211047670000438D /* Dose+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0464211047670000438D /* Dose+CoreDataProperties.swift */; };
+		635D0471211047670000438D /* Medication+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0465211047670000438D /* Medication+CoreDataClass.swift */; };
+		635D0472211047670000438D /* Medication+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0466211047670000438D /* Medication+CoreDataProperties.swift */; };
+		635D0473211047670000438D /* Schedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0467211047670000438D /* Schedule+CoreDataClass.swift */; };
+		635D0474211047670000438D /* Schedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0468211047670000438D /* Schedule+CoreDataProperties.swift */; };
+		635D0475211047670000438D /* Pillbox+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0469211047670000438D /* Pillbox+CoreDataClass.swift */; };
+		635D0476211047670000438D /* Pillbox+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D046A211047670000438D /* Pillbox+CoreDataProperties.swift */; };
+		635D0477211047670000438D /* DailySchedule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D046B211047670000438D /* DailySchedule+CoreDataClass.swift */; };
+		635D0478211047670000438D /* DailySchedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D046C211047670000438D /* DailySchedule+CoreDataProperties.swift */; };
+		635D0479211047670000438D /* Prescription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D046D211047670000438D /* Prescription+CoreDataClass.swift */; };
+		635D047A211047670000438D /* Prescription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D046E211047670000438D /* Prescription+CoreDataProperties.swift */; };
 		63F7BB09210C48E900D49CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7BB08210C48E900D49CE0 /* AppDelegate.swift */; };
 		63F7BB0E210C48E900D49CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F7BB0C210C48E900D49CE0 /* Main.storyboard */; };
 		63F7BB11210C48E900D49CE0 /* pills.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63F7BB0F210C48E900D49CE0 /* pills.xcdatamodeld */; };
@@ -49,20 +49,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6315DBFF210FAD1100DABF1C /* DailySchedule+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailySchedule+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6315DC00210FAD1100DABF1C /* DailySchedule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailySchedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6315DC01210FAD1100DABF1C /* Schedule+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6315DC02210FAD1100DABF1C /* Schedule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6315DC03210FAD1100DABF1C /* Dose+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dose+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6315DC04210FAD1100DABF1C /* Dose+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dose+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6315DC05210FAD1100DABF1C /* Pillbox+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pillbox+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6315DC06210FAD1100DABF1C /* Pillbox+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pillbox+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6315DC07210FAD1100DABF1C /* Medication+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medication+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6315DC08210FAD1100DABF1C /* Medication+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medication+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6315DC09210FAD1100DABF1C /* Prescription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prescription+CoreDataClass.swift"; sourceTree = "<group>"; };
-		6315DC0A210FAD1100DABF1C /* Prescription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prescription+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		635D045F21103FBC0000438D /* DailyScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScheduleTableViewController.swift; sourceTree = "<group>"; };
 		635D0461211040480000438D /* CoreDataStackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
+		635D0463211047670000438D /* Dose+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dose+CoreDataClass.swift"; sourceTree = "<group>"; };
+		635D0464211047670000438D /* Dose+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dose+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		635D0465211047670000438D /* Medication+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medication+CoreDataClass.swift"; sourceTree = "<group>"; };
+		635D0466211047670000438D /* Medication+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medication+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		635D0467211047670000438D /* Schedule+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataClass.swift"; sourceTree = "<group>"; };
+		635D0468211047670000438D /* Schedule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		635D0469211047670000438D /* Pillbox+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pillbox+CoreDataClass.swift"; sourceTree = "<group>"; };
+		635D046A211047670000438D /* Pillbox+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pillbox+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		635D046B211047670000438D /* DailySchedule+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailySchedule+CoreDataClass.swift"; sourceTree = "<group>"; };
+		635D046C211047670000438D /* DailySchedule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailySchedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		635D046D211047670000438D /* Prescription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prescription+CoreDataClass.swift"; sourceTree = "<group>"; };
+		635D046E211047670000438D /* Prescription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prescription+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		63F7BB05210C48E900D49CE0 /* pills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F7BB08210C48E900D49CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63F7BB0D210C48E900D49CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,18 +107,18 @@
 		63350A20210E6C4200547FB8 /* ManagedObjects */ = {
 			isa = PBXGroup;
 			children = (
-				6315DBFF210FAD1100DABF1C /* DailySchedule+CoreDataClass.swift */,
-				6315DC00210FAD1100DABF1C /* DailySchedule+CoreDataProperties.swift */,
-				6315DC01210FAD1100DABF1C /* Schedule+CoreDataClass.swift */,
-				6315DC02210FAD1100DABF1C /* Schedule+CoreDataProperties.swift */,
-				6315DC03210FAD1100DABF1C /* Dose+CoreDataClass.swift */,
-				6315DC04210FAD1100DABF1C /* Dose+CoreDataProperties.swift */,
-				6315DC05210FAD1100DABF1C /* Pillbox+CoreDataClass.swift */,
-				6315DC06210FAD1100DABF1C /* Pillbox+CoreDataProperties.swift */,
-				6315DC07210FAD1100DABF1C /* Medication+CoreDataClass.swift */,
-				6315DC08210FAD1100DABF1C /* Medication+CoreDataProperties.swift */,
-				6315DC09210FAD1100DABF1C /* Prescription+CoreDataClass.swift */,
-				6315DC0A210FAD1100DABF1C /* Prescription+CoreDataProperties.swift */,
+				635D0463211047670000438D /* Dose+CoreDataClass.swift */,
+				635D0464211047670000438D /* Dose+CoreDataProperties.swift */,
+				635D0465211047670000438D /* Medication+CoreDataClass.swift */,
+				635D0466211047670000438D /* Medication+CoreDataProperties.swift */,
+				635D0467211047670000438D /* Schedule+CoreDataClass.swift */,
+				635D0468211047670000438D /* Schedule+CoreDataProperties.swift */,
+				635D0469211047670000438D /* Pillbox+CoreDataClass.swift */,
+				635D046A211047670000438D /* Pillbox+CoreDataProperties.swift */,
+				635D046B211047670000438D /* DailySchedule+CoreDataClass.swift */,
+				635D046C211047670000438D /* DailySchedule+CoreDataProperties.swift */,
+				635D046D211047670000438D /* Prescription+CoreDataClass.swift */,
+				635D046E211047670000438D /* Prescription+CoreDataProperties.swift */,
 			);
 			path = ManagedObjects;
 			sourceTree = "<group>";
@@ -309,23 +309,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6315DC14210FAD1100DABF1C /* Medication+CoreDataProperties.swift in Sources */,
-				6315DC12210FAD1100DABF1C /* Pillbox+CoreDataProperties.swift in Sources */,
-				6315DC15210FAD1100DABF1C /* Prescription+CoreDataClass.swift in Sources */,
 				635D0462211040480000438D /* CoreDataStackManager.swift in Sources */,
-				6315DC0C210FAD1100DABF1C /* DailySchedule+CoreDataProperties.swift in Sources */,
-				6315DC0B210FAD1100DABF1C /* DailySchedule+CoreDataClass.swift in Sources */,
-				6315DC0F210FAD1100DABF1C /* Dose+CoreDataClass.swift in Sources */,
 				63F7BB3A210D827A00D49CE0 /* MedicationForm.swift in Sources */,
+				635D0479211047670000438D /* Prescription+CoreDataClass.swift in Sources */,
+				635D0471211047670000438D /* Medication+CoreDataClass.swift in Sources */,
+				635D0470211047670000438D /* Dose+CoreDataProperties.swift in Sources */,
+				635D0475211047670000438D /* Pillbox+CoreDataClass.swift in Sources */,
+				635D0473211047670000438D /* Schedule+CoreDataClass.swift in Sources */,
+				635D047A211047670000438D /* Prescription+CoreDataProperties.swift in Sources */,
+				635D046F211047670000438D /* Dose+CoreDataClass.swift in Sources */,
+				635D0476211047670000438D /* Pillbox+CoreDataProperties.swift in Sources */,
+				635D0477211047670000438D /* DailySchedule+CoreDataClass.swift in Sources */,
 				63F7BB11210C48E900D49CE0 /* pills.xcdatamodeld in Sources */,
+				635D0478211047670000438D /* DailySchedule+CoreDataProperties.swift in Sources */,
+				635D0474211047670000438D /* Schedule+CoreDataProperties.swift in Sources */,
+				635D0472211047670000438D /* Medication+CoreDataProperties.swift in Sources */,
 				635D046021103FBC0000438D /* DailyScheduleTableViewController.swift in Sources */,
-				6315DC13210FAD1100DABF1C /* Medication+CoreDataClass.swift in Sources */,
-				6315DC0D210FAD1100DABF1C /* Schedule+CoreDataClass.swift in Sources */,
-				6315DC16210FAD1100DABF1C /* Prescription+CoreDataProperties.swift in Sources */,
 				63F7BB09210C48E900D49CE0 /* AppDelegate.swift in Sources */,
-				6315DC0E210FAD1100DABF1C /* Schedule+CoreDataProperties.swift in Sources */,
-				6315DC11210FAD1100DABF1C /* Pillbox+CoreDataClass.swift in Sources */,
-				6315DC10210FAD1100DABF1C /* Dose+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

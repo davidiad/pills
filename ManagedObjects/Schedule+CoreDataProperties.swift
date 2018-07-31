@@ -2,7 +2,7 @@
 //  Schedule+CoreDataProperties.swift
 //  pills
 //
-//  Created by David Fierstein on 7/30/18.
+//  Created by David Fierstein on 7/31/18.
 //  Copyright © 2018 David Fierstein. All rights reserved.
 //
 //
