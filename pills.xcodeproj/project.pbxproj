@@ -19,6 +19,8 @@
 		6315DC14210FAD1100DABF1C /* Medication+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC08210FAD1100DABF1C /* Medication+CoreDataProperties.swift */; };
 		6315DC15210FAD1100DABF1C /* Prescription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC09210FAD1100DABF1C /* Prescription+CoreDataClass.swift */; };
 		6315DC16210FAD1100DABF1C /* Prescription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315DC0A210FAD1100DABF1C /* Prescription+CoreDataProperties.swift */; };
+		635D046021103FBC0000438D /* DailyScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D045F21103FBC0000438D /* DailyScheduleTableViewController.swift */; };
+		635D0462211040480000438D /* CoreDataStackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D0461211040480000438D /* CoreDataStackManager.swift */; };
 		63F7BB09210C48E900D49CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7BB08210C48E900D49CE0 /* AppDelegate.swift */; };
 		63F7BB0E210C48E900D49CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F7BB0C210C48E900D49CE0 /* Main.storyboard */; };
 		63F7BB11210C48E900D49CE0 /* pills.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63F7BB0F210C48E900D49CE0 /* pills.xcdatamodeld */; };
@@ -59,6 +61,8 @@
 		6315DC08210FAD1100DABF1C /* Medication+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medication+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6315DC09210FAD1100DABF1C /* Prescription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prescription+CoreDataClass.swift"; sourceTree = "<group>"; };
 		6315DC0A210FAD1100DABF1C /* Prescription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prescription+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		635D045F21103FBC0000438D /* DailyScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScheduleTableViewController.swift; sourceTree = "<group>"; };
+		635D0461211040480000438D /* CoreDataStackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStackManager.swift; sourceTree = "<group>"; };
 		63F7BB05210C48E900D49CE0 /* pills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F7BB08210C48E900D49CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63F7BB0D210C48E900D49CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 		63F7BAFC210C48E900D49CE0 = {
 			isa = PBXGroup;
 			children = (
+				635D0461211040480000438D /* CoreDataStackManager.swift */,
+				635D045F21103FBC0000438D /* DailyScheduleTableViewController.swift */,
 				63350A20210E6C4200547FB8 /* ManagedObjects */,
 				63F7BB07210C48E900D49CE0 /* pills */,
 				63F7BB1F210C48EA00D49CE0 /* pillsTests */,
@@ -306,11 +312,13 @@
 				6315DC14210FAD1100DABF1C /* Medication+CoreDataProperties.swift in Sources */,
 				6315DC12210FAD1100DABF1C /* Pillbox+CoreDataProperties.swift in Sources */,
 				6315DC15210FAD1100DABF1C /* Prescription+CoreDataClass.swift in Sources */,
+				635D0462211040480000438D /* CoreDataStackManager.swift in Sources */,
 				6315DC0C210FAD1100DABF1C /* DailySchedule+CoreDataProperties.swift in Sources */,
 				6315DC0B210FAD1100DABF1C /* DailySchedule+CoreDataClass.swift in Sources */,
 				6315DC0F210FAD1100DABF1C /* Dose+CoreDataClass.swift in Sources */,
 				63F7BB3A210D827A00D49CE0 /* MedicationForm.swift in Sources */,
 				63F7BB11210C48E900D49CE0 /* pills.xcdatamodeld in Sources */,
+				635D046021103FBC0000438D /* DailyScheduleTableViewController.swift in Sources */,
 				6315DC13210FAD1100DABF1C /* Medication+CoreDataClass.swift in Sources */,
 				6315DC0D210FAD1100DABF1C /* Schedule+CoreDataClass.swift in Sources */,
 				6315DC16210FAD1100DABF1C /* Prescription+CoreDataProperties.swift in Sources */,
