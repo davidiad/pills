@@ -16,20 +16,20 @@ class DailyScheduleTableViewController: UITableViewController {
         CoreDataStackManager.sharedInstance.managedObjectContext
     }()
     
-    lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
-        
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "DailySchedule")
-        fetchRequest.predicate = NSPredicate(format: "current == %@", true as CVarArg)
-//        // Add Sort Descriptors
-//        let sortDescriptor = NSSortDescriptor(key: "word", ascending: true)
-//        fetchRequest.sortDescriptors = [sortDescriptor]
-        
-        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.sharedContext, sectionNameKeyPath: nil, cacheName: nil)
-        /* TK
-        fetchedResultsController.delegate = tableViewsDelegate
-        */
-        return fetchedResultsController
-    }()
+//    lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
+//        
+//        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "DailySchedule")
+//        fetchRequest.predicate = NSPredicate(format: "current == %@", true as CVarArg)
+////        // Add Sort Descriptors
+////        let sortDescriptor = NSSortDescriptor(key: "word", ascending: true)
+////        fetchRequest.sortDescriptors = [sortDescriptor]
+//        
+//        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.sharedContext, sectionNameKeyPath: nil, cacheName: nil)
+//        /* TK
+//        fetchedResultsController.delegate = tableViewsDelegate
+//        */
+//        return fetchedResultsController
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()

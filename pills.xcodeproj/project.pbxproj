@@ -21,6 +21,7 @@
 		635D0478211047670000438D /* DailySchedule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D046C211047670000438D /* DailySchedule+CoreDataProperties.swift */; };
 		635D0479211047670000438D /* Prescription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D046D211047670000438D /* Prescription+CoreDataClass.swift */; };
 		635D047A211047670000438D /* Prescription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D046E211047670000438D /* Prescription+CoreDataProperties.swift */; };
+		635D047C2110BD920000438D /* PillsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635D047B2110BD920000438D /* PillsModel.swift */; };
 		63F7BB09210C48E900D49CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F7BB08210C48E900D49CE0 /* AppDelegate.swift */; };
 		63F7BB0E210C48E900D49CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F7BB0C210C48E900D49CE0 /* Main.storyboard */; };
 		63F7BB11210C48E900D49CE0 /* pills.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63F7BB0F210C48E900D49CE0 /* pills.xcdatamodeld */; };
@@ -63,6 +64,7 @@
 		635D046C211047670000438D /* DailySchedule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailySchedule+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		635D046D211047670000438D /* Prescription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prescription+CoreDataClass.swift"; sourceTree = "<group>"; };
 		635D046E211047670000438D /* Prescription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prescription+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		635D047B2110BD920000438D /* PillsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PillsModel.swift; path = Model/PillsModel.swift; sourceTree = "<group>"; };
 		63F7BB05210C48E900D49CE0 /* pills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F7BB08210C48E900D49CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63F7BB0D210C48E900D49CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		63F7BAFC210C48E900D49CE0 = {
 			isa = PBXGroup;
 			children = (
+				635D047B2110BD920000438D /* PillsModel.swift */,
 				635D0461211040480000438D /* CoreDataStackManager.swift */,
 				635D045F21103FBC0000438D /* DailyScheduleTableViewController.swift */,
 				63350A20210E6C4200547FB8 /* ManagedObjects */,
@@ -313,6 +316,7 @@
 				63F7BB3A210D827A00D49CE0 /* MedicationForm.swift in Sources */,
 				635D0479211047670000438D /* Prescription+CoreDataClass.swift in Sources */,
 				635D0471211047670000438D /* Medication+CoreDataClass.swift in Sources */,
+				635D047C2110BD920000438D /* PillsModel.swift in Sources */,
 				635D0470211047670000438D /* Dose+CoreDataProperties.swift in Sources */,
 				635D0475211047670000438D /* Pillbox+CoreDataClass.swift in Sources */,
 				635D0473211047670000438D /* Schedule+CoreDataClass.swift in Sources */,
