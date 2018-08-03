@@ -51,7 +51,12 @@ class PillsModel: NSObject, NSFetchedResultsControllerDelegate {
             } else { // there are no Schedules, so create one
                 
                 let newSchedule = NSEntityDescription.insertNewObject(forEntityName: "Schedule", into: context) as! Schedule
-
+                let dailySchedule = NSEntityDescription.insertNewObject(forEntityName: "DailySchedule", into: context) as! DailySchedule
+                dailySchedule.day = Int16(Day.monday.rawValue)
+                dailySchedule.schedule = newSchedule
+                let newPillbox = NSEntityDescription.insertNewObject(forEntityName: "Pillbox", into: context) as! Pillbox
+                newPillbox.days = dailySchedule
+                newPillbox.title = "Morning"
                 dataManager.saveContext()
                 
                 return newSchedule
