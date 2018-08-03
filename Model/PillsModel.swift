@@ -24,6 +24,9 @@ class PillsModel: NSObject, NSFetchedResultsControllerDelegate {
 
     var schedule: Schedule? // The managed object that is at the root of the object graph
     
+    let defaultPillboxes: [String] = ["Morning", "Midday", "Evening"]
+    
+    
     //This prevents others from using the default '()' initializer for this class.
     fileprivate override init() {
         super.init()
@@ -54,9 +57,11 @@ class PillsModel: NSObject, NSFetchedResultsControllerDelegate {
                 let dailySchedule = NSEntityDescription.insertNewObject(forEntityName: "DailySchedule", into: context) as! DailySchedule
                 dailySchedule.day = Int16(Day.monday.rawValue)
                 dailySchedule.schedule = newSchedule
-                let newPillbox = NSEntityDescription.insertNewObject(forEntityName: "Pillbox", into: context) as! Pillbox
-                newPillbox.days = dailySchedule
-                newPillbox.title = "Morning"
+                
+                for title in defaultPillboxes {
+                    addPillbox(dailySchedule: dailySchedule, title: title)
+                }
+                
                 dataManager.saveContext()
                 
                 return newSchedule
@@ -70,5 +75,11 @@ class PillsModel: NSObject, NSFetchedResultsControllerDelegate {
             
             return newSchedule
         }
+    }
+    
+    func addPillbox(dailySchedule: DailySchedule, title: String) {
+        let newPillbox = NSEntityDescription.insertNewObject(forEntityName: "Pillbox", into: context) as! Pillbox
+        newPillbox.days = dailySchedule
+        newPillbox.title = title
     }
 }
