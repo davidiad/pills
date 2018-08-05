@@ -11,8 +11,10 @@ import CoreData
 
 class DailyScheduleTableViewController: UITableViewController {
 
+    let delegate = FetchedResultsController()
+    
     // MARK: - NSFetchedResultsController vars
-    lazy var sharedContext = {
+    lazy var context = {
         CoreDataStackManager.sharedInstance.managedObjectContext
     }()
     
@@ -31,14 +33,40 @@ class DailyScheduleTableViewController: UITableViewController {
 ////        return fetchedResultsController
 //    }()
     
+    lazy var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult> = {
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "DailySchedule")
+        
+        // The DailySchedule associated with these pillboxes has current == true
+        //fetchRequest.predicate = NSPredicate(format: "current == %@", true as CVarArg)
+        
+        // Sort Descriptors for the pillboxes
+        let sortDescriptor = NSSortDescriptor(key: "time", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        let fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: self.context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        fetchedResultsController.delegate = delegate
+        
+        return fetchedResultsController
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        // display an Edit button in the navigation bar for this view controller.
+         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        
+        do {
+            try fetchedResultsController.performFetch()
+            
+        } catch {
+            let fetchError = error as NSError
+            print("\(fetchError), \(fetchError.localizedDescription)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
